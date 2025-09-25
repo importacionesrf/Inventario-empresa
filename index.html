@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema Empresarial</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Sistema Empresarial - Inventario</h1>
+<form id="productForm">
+  <label>Producto: <input type="text" id="producto" required></label><br><br>
+  <label>Precio compra (USD): <input type="number" id="precioCompraUSD" required></label><br><br>
+  <label>Precio compra (COP): <input type="number" id="precioCompraCOP" required></label><br><br>
+  <label>Precio venta (USD): <input type="number" id="precioVentaUSD" required></label><br><br>
+  <label>Precio venta (COP): <input type="number" id="precioVentaCOP" required></label><br><br>
+  <label>Precio envío (USD): <input type="number" id="precioEnvio" required></label><br><br>
+  <label>Precio envío (COP): <input type="number" id="precioEnvioCOP" required></label><br><br>
+  <label>Depósito del cliente: 
+    <select id="deposito" required>
+      <option value="Sí">Sí</option>
+      <option value="No">No</option>
+    </select>
+  </label><br><br>
+  <label>Tiempo estimado de entrega: <input type="date" id="fechaEntrega" required></label><br><br>
+  <label>Estado del producto:
+    <select id="estado" required>
+      <option value="En proceso de compra">En proceso de compra</option>
+      <option value="Comprado">Comprado</option>
+      <option value="En vuelo">En vuelo</option>
+      <option value="Llegada a Colombia">Llegada a Colombia</option>
+    </select>
+  </label><br><br>
+  <button type="submit">Agregar Producto</button>
+</form>
+<table id="inventoryTable">
+  <thead>
+    <tr>
+      <th>Producto</th>
+      <th>Precio Compra COP</th>
+      <th>Precio Compra USD</th>
+      <th>Precio Venta COP</th>
+      <th>Precio Venta USD</th>
+      <th>Ganancia COP</th>
+      <th>Ganancia USD</th>
+      <th>Precio Envío COP</th>
+      <th>Precio Envío USD</th>
+      <th>Depósito</th>
+      <th>Fecha Entrega</th>
+      <th>Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<script src="script.js"></script>
+</body>
+</html>
